@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav #bt-mobile-menu {
+  display: none;
+}
 
 #ima{
   background-image: linear-gradient(#fff,#ffc600);
@@ -127,4 +130,29 @@ font-family: 'Limelight', cursive;
   #tudo img{
     width: 50%;
   }
+}
+@media (max-width:600px){
+  nav #bt-mobile-menu {
+    display: block;
+
+}
+
+nav #bt-mobile-menu {
+  display: block;
+}
+
+nav .bt-common-menu {
+  display: none;
+}
+
+nav .bt-common-menu.active {
+  display: block;
+}
+
+nav ul.mobile-mode {
+  display: flex;
+  flex-direction: column;
+}
+
+
 }

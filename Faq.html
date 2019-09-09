@@ -22,6 +22,12 @@
                             </div>
                         <hr>                       
                         <ul>
+                                <li id="bt-mobile-menu">
+                                        <!-- HTML para colocar os ícones do FA -->
+                                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </li>
                             <li><a href=role.html>Home</a></li>
                             <li><a href="casa.html">Casa</a></li>
                             <li><a href="Faq.html">FAQ</a></li>
@@ -68,7 +74,35 @@
         
             </section>  
 
-
+            <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-skull");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-skull");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }
+            
+        </script>
 
 
             <section>
