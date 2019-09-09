@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#ima{
+    background-image: linear-gradient(#fff,#ffc600);
+  }
+
+nav div{
+  display: flex;  
+  justify-content: space-between; 
+  
+}
+
+.junto{
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  
+  nav p{
+    justify-content: flex-end;
+    font-family: 'Limelight', cursive;
+    font-size: 1.5em;
+    padding: 0em 0px 0px 9px;
+  
+  }
+
+img:first-child{
+    width: 8%;
+    padding: 0.2em;
+  }
+
+ .junto img:first-child{
+  width: 40%;
+  padding: 0em 0px 0px 0px;
+  }
+  
+
+ul{
+    background-color: #ffc600;
+    width: 100%;
+    height: 50%;
+    
+}
+
+    nav ul > li{
+
+    width: 100%;
+    text-align: center;
+    }
+    
+NAV ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    font-size: 1.5em;
+    font-family: 'Limelight', cursive;
+    align-items: flex-end;
+    justify-content: space-between;
+    list-style-type: none;
+        }
+
+    hr{
+        background-color: black;
+    }
+
+.formu{  
+ display: flex;
+ justify-content: space-around;
+ padding-right: 250px;
+ padding-top: 6%;
+ align-items: center;  
+ background-image: linear-gradient(#ffc600,#fff);  
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ width: 100%;
+ height: 35em;      
+}
+
+#cadas{
+  border-radius: 7%;
+border: solid black;
+padding: 1.7em 20px 50px 20px;
+background-color:#fff0bc;
+opacity: 1.5;
+}
+
+#lon{
+ border: solid black;
+ padding: 1.7em 20px 50px 20px;
+ border-radius: 8%;
+ background-color:#fff0bc;
+ opacity: 1.5;
+}
+
+#adm{
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Limelight', cursive;
+  padding: 2%;
+}
+
+ #rodapé {
+        background-image: linear-gradient(#ffc600,#fff);
+        height: 30%;
+        padding: 1.5%;
+      }

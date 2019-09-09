@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'oi';
+    src: url('fontes/BAYOC___.TTF');
+}
+
+
+
+#ima{
+    background-image: linear-gradient(#fff,#ffc600);
+  }
+
+nav div{
+  display: flex;  
+  justify-content: space-between; 
+  
+}
+
+.junto{
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  
+  nav p{
+    justify-content: flex-end;
+    font-family: 'Limelight', cursive;
+    font-size: 1.5em;
+    padding: 0em 0px 0px 9px;
+  
+  }
+
+img:first-child{
+    width: 8%;
+    padding: 0.2em;
+  }
+
+ .junto img:first-child{
+  width: 40%;
+  padding: 0em 0px 0px 0px;
+  }
+  
+
+ul{
+    background-color: #ffc600;
+    width: 100%;
+    height: 50%;
+    
+}
+
+    nav ul > li{
+
+    width: 100%;
+    text-align: center;
+    }
+    
+NAV ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;  
+    font-size: 1.5em;
+    font-family: 'Limelight', cursive;
+    align-items: flex-end;
+    justify-content: space-between;
+    list-style-type: none;
+        }
+
+
+.video{
+position: relative;
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+
+}
+
+.video h1{
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'oi', sans-serif;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+}
+
+.mp4 {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.color {
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: rgb(167, 172, 173);
+    width: 100%;
+    height: 100vh;
+    opacity: 0.3;
+}
+
+
+
+#rodapé {
+    background-image: linear-gradient(#5f5e5c,#fff);
+      height: 30%;
+    padding: 1.5%;
+}
