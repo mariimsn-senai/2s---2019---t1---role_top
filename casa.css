@@ -1,14 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 nav #bt-mobile-menu {
-  display: none;
+display: none;
 }
 
 #ima{
-  background-image: linear-gradient(#fff,#ffc600);
+background-image: linear-gradient(#fff,#ffc600);
 }
 
 nav div{
@@ -18,22 +18,22 @@ justify-content: space-between;
 }
 
 .junto{
-  flex-direction: row;
-  align-items: center;
-  
+flex-direction: row;
+align-items: center;
+
 }
 
 nav p{
-  justify-content: flex-end;
-  font-family: 'Limelight', cursive;
-  font-size: 1.5em;
-  padding: 0em 0px 0px 9px;
+justify-content: flex-end;
+font-family: 'Limelight', cursive;
+font-size: 1.5em;
+padding: 0em 0px 0px 9px;
 
 }
 
 img:first-child{
-  width: 8%;
-  padding: 0.2em;
+width: 8%;
+padding: 0.2em;
 }
 
 .junto img:first-child{
@@ -41,34 +41,48 @@ width: 40%;
 padding: 0;
 }
 
+.junto > a{
+  color: black;
+  padding: 0.2em;
+}
 
 ul{
-  background-color: #ffc600;
-  width: 100%;
-  height: 50%;
-  
+background-color: #ffc600;
+width: 100%;
+height: 50%;
+
+}
+
+nav ul > li > a{
+  text-decoration: none;
+  padding: 0% 5% 0% 5%;
+  color: black;
 }
 
   nav ul > li{
 
-  width: 100%;
-  text-align: center;
-  }
-  
-NAV ul{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;  
-  font-size: 1.5em;
-  font-family: 'Limelight', cursive;
-  align-items: flex-end;
-  justify-content: space-between;
-  list-style-type: none;
-      }
+width: 100%;
+text-align: center;
 
-hr{
-  background-color: black;
 }
+
+NAV ul{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;  
+font-size: 1.5em;
+font-family: 'Limelight', cursive;
+align-items: flex-end;
+justify-content: space-between;
+list-style-type: none;
+
+    }
+
+nav ul > li > a:hover{
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+
+}  
 body {
   background-image: url('laranja/fundo-laranja-brilhante_23-2147992744.jpg');
   background-repeat: no-repeat;
@@ -108,16 +122,16 @@ font-family: 'Limelight', cursive;
 }
 
 #info img {
-  width: 30%;
-  padding: 0em 0px 15px 5px;
+  width: 35%;
+  
   border-radius: 5em 5em 5em 5em ;
   
 }
 
 #info p {
-  width: 30%;
-  border: solid;
-  padding: 16px 10px 16px 10px;
+  width: 35%;
+  height: 15%;
+  border: solid ;
   text-align: center;
   border-radius: 10px;
   font-size: 1.5em;
@@ -154,5 +168,27 @@ nav ul.mobile-mode {
   flex-direction: column;
 }
 
+
+}
+@media (max-width: 600px) {
+  img:first-child{
+    width: 19%;
+    }
+
+}
+
+@media (max-width: 600px) {
+  .junto img:first-child{
+      width: 100%;
+      padding: 0% 3% 0% 5%;
+      margin-right: 3%;
+    }
+
+}
+
+@media (max-width: 600px) {
+  .junto{
+    margin-left: 9em;
+    }
 
 }

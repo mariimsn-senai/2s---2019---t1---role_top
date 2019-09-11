@@ -6,103 +6,113 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="FAQ.css"  rel="stylesheet" type="text/css">
     <title>Roletop</title> 
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Solid:900%7COpen+Sans" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
 </head>
 <body>
  
-        <section id= menu>
-                <header>
-                    <nav>
-                            <div id=ima> 
-                                    <img src="ima/logo.png">
-                                  
-                                  <div class="junto">   
-                                      <a href="login.html">login cadastro</a></p> 
-                                      <a href="login.html"><img src="usuario/181549.svg" alt="usuario"></a> 
-                                   </div> 
-                            </div>
-                        <hr>                       
-                        <ul>
-                                <li id="bt-mobile-menu">
-                                        <!-- HTML para colocar os ícones do FA -->
-                                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
-                                            <i class="fa fa-bars"></i>
-                                        </a>
-                                    </li>
-                            <li><a href=role.html>Home</a></li>
-                            <li><a href="casa.html">Casa</a></li>
-                            <li><a href="Faq.html">FAQ</a></li>
-                            <li><a href="pacotes.html">Pacotes</a></li>
-                            <li><a href="ambiente.html">Ambiente</a></li>
-                            <li>Contato</li>
-                            <li>Onde estamos</li>
-                            <li>Quem Somos</li>
-                        </ul>
-                        <hr>
-                    </nav>
-                </header>
-            </section>
+    <section id=menu>
+        <header>
+            <nav>
+                <div id=ima>
+                    <img src="ima/logo.png">
+
+                    <div class="junto">
+                        <a href="login.html">login/cadastro</a></p>
+                        <a href="login.html"><img src="usuario/181549.svg" alt="usuario"></a>
+                    </div>
+                </div>
+                <hr>
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <!-- HTML para colocar os ícones do FA -->
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href=role.html>Home</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="casa.html">Casa</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="Faq.html">FAQ</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="pacotes.html">Pacotes</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="ambiente.html">Ambiente</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="contato.html">Contato</a></li>
+                    
+                </ul>
+                <hr>
+            </nav>
+        </header>
+    </section>
+    
             
 
         <section id='titulo'>
             <div>
                 <h1>FAQ</h1>
                 <br>
-                <p> Tem área de fumante?</p>
-                <p>Sim, temos área para fumantes.</p>
+                <strong><p> Tem área de fumante?</strong>
+                    <br>
+                 Sim, temos área para fumantes.
                 <br>
-                <p>Tem banheiro?</p>
-                <p>Temos dois banheiros</p>
+                <strong>Tem banheiro?</strong>
+                    <br>
+                    Temos dois banheiros
                 <br>
-                <p>Como faço para comprar?</p>
-                <p>Em nosso site temos planos.</p>
+                <strong>Como faço para comprar?</strong>
+                    <br>
+                    Em nosso site temos planos.
                 <br>
-                <p>Tem camarim?</p>
-                <p>Sim, nos temos.</p>
+                <strong>Tem camarim?</strong>
+                   <br>
+                    Sim, nos temos.
                 <br>
-                <p>Como faço para visitar o salão?</p>
-                <p>É só entrar em contato conosco.</p>
+                <strong>Como faço para visitar o salão?</strong>
+                   <br>
+                   É só entrar em contato conosco.
                 <br>
-                <p>É feito um contrato?</p>
-                <p>Sim, para sua segurança nos fazemos um contrato.</p>
+                <strong>É feito um contrato?</strong>
+                  <br>
+                   Sim, para sua segurança nos fazemos um contrato.
                 <br>
-                <p>A decoração é inclusa?</p>
-                <p>Infelizmente não fazemos decorações.</p>
+                <strong>A decoração é inclusa?</strong>
+                   <br>
+                   Infelizmente não fazemos decorações.
                 <br>
-                <p>Quantos pacotes tem para escolher?</p>
-                <p>Temos três pacotes, veja em nosso site.</p>
+                <strong>Quantos pacotes tem para escolher?</strong>
+                  <br>
+                   Temos três pacotes, veja em nosso site.</p>
             </div>
         
             </section>  
 
             <script>
-            function toggleMobileMenu() {
-                var ul = document.querySelector("nav ul");
-                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
-                var icon = document.querySelector(".icon > i");
-    
-                ul.classList.toggle("mobile-mode");
-    
-                if (icon.classList.contains("fa-bars")) {
-                    icon.classList.remove("fa-bars");
-                    icon.classList.remove("fa");
-    
-                    icon.classList.add("fas");
-                    icon.classList.add("fa-skull");
-                } else {
-                    icon.classList.remove("fas");
-                    icon.classList.remove("fa-skull");
-    
-                    icon.classList.add("fa");
-                    icon.classList.add("fa-bars");
-                }
-    
-                for (var button of commonButtons) {
-                    button.classList.toggle("active");
-                }
-    
-            }
+                    function toggleMobileMenu() {
+                        var ul = document.querySelector("nav ul");
+                        var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                        var icon = document.querySelector(".icon > i");
             
-        </script>
+                        ul.classList.toggle("mobile-mode");
+            
+                        if (icon.classList.contains("fa-bars")) {
+                            icon.classList.remove("fa-bars");
+                            icon.classList.remove("fa");
+            
+                            icon.classList.add("fas");
+                            icon.classList.add("fa-bars");
+                        } else {
+                            icon.classList.remove("fas");
+                            icon.classList.remove("fa-bars");
+            
+                            icon.classList.add("fa");
+                            icon.classList.add("fa-bars");
+                        }
+            
+                        for (var button of commonButtons) {
+                            button.classList.toggle("active");
+                        }
+            
+                    }
+            
+                </script>
 
 
             <section>
